@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Go A Fishin’ 2Day Charters</title>
+  <meta name="description" content="Simple, no-fuss fishing charter website: inshore & offshore trips, pricing, and booking info." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#home">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home">
+        <span class="brand__mark" aria-hidden="true">🎣</span>
+        <span class="brand__text">Go A Fishin’ 2Day Charters</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#booking">Booking Info</a>
+        <a href="#photos">Photos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / COVER PHOTO -->
+    <section class="hero" id="home" aria-label="Cover photo and intro">
+      <div class="hero__bg" role="img" aria-label="Cover photo (replace with your best on-the-water shot)"></div>
+
+      <div class="hero__content container">
+        <h1>Inshore & Offshore Fishing Charters</h1>
+        <p class="lead">
+          Friendly, professional guided trips for families, friends, and serious anglers.
+          Choose a half day or full day inshore, or go offshore for the big stuff.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn--primary" id="ctaCall" href="#">Call to Book</a>
+          <a class="btn btn--ghost" id="ctaText" href="#">Text for Availability</a>
+          <a class="btn btn--ghost" id="ctaEmail" href="#">Email</a>
+        </div>
+
+        <p class="micro">
+          Serving the Gulf Coast • Licenses & safety gear provided (customize this line)
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" aria-label="About the captain">
+      <div class="grid-2">
+        <div>
+          <h2>About Your Guide</h2>
+          <p>
+            <strong>Write a short “about me / history” here.</strong> Example:
+            “I’ve spent my whole life on these waters and love putting people on fish—whether
+            it’s a relaxed family trip or a hard-charging offshore day.”
+          </p>
+          <ul class="checks">
+            <li>Patient with beginners</li>
+            <li>Great for groups & families</li>
+            <li>Target species: redfish, trout, snapper, grouper (edit as needed)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Quick Details</h3>
+          <dl class="dl">
+            <div><dt>Trip types</dt><dd>Inshore / Offshore</dd></div>
+            <div><dt>Group size</dt><dd>Up to 4 inshore • up to 6 offshore</dd></div>
+            <div><dt>What to bring</dt><dd>Sunscreen, snacks, drinks, sunglasses (customize)</dd></div>
+            <div><dt>What’s included</dt><dd>Rods, tackle, bait, safety gear (customize)</dd></div>
+          </dl>
+          <p class="micro">Want something special? Just ask—custom trips are possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section--alt" id="pricing" aria-label="Pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="micro">Prices below are from your draft mock-up. Edit anytime in <code>site.config.js</code>.</p>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Offshore (up to 6 people)</h3>
+            <ul class="price-list" id="offshorePrices"></ul>
+          </article>
+
+          <article class="price-card">
+            <h3>Inshore (up to 4 people)</h3>
+            <ul class="price-list" id="inshorePrices"></ul>
+          </article>
+        </div>
+
+        <div class="note">
+          <p><strong>Note:</strong> Deposits, cancellations, and weather policies go here (optional).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section container" id="booking" aria-label="Booking information">
+      <div class="grid-2">
+        <div>
+          <h2>Booking Info</h2>
+          <p>
+            To check availability, reach out by text or call. Email works great too.
+          </p>
+
+          <div class="contact-card">
+            <div class="contact-row">
+              <span class="label">Email</span>
+              <a id="emailLink" href="#">igoafishin2daycharters@gmail.com</a>
+            </div>
+
+            <div class="contact-row">
+              <span class="label">Phone</span>
+              <div class="phones">
+                <a id="phone1Link" href="#">(813) 394-3389</a>
+                <a id="phone2Link" href="#">(850) 515-5489</a>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn btn--primary" id="bookNow" href="#">Book / Check Dates</a>
+              <a class="btn btn--ghost" id="mapLink" href="#" target="_blank" rel="noopener">Service Area Map</a>
+            </div>
+
+            <p class="micro">
+              Tip: update the “Service Area Map” link to your home marina or preferred meetup location.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq card">
+          <h3>Common Questions</h3>
+          <details>
+            <summary>What if the weather is bad?</summary>
+            <p>Safety first. If conditions aren’t safe, we reschedule or refund per your policy.</p>
+          </details>
+          <details>
+            <summary>Do you provide fishing licenses?</summary>
+            <p>Replace this with your local rules and whether your charter covers it.</p>
+          </details>
+          <details>
+            <summary>Can we keep fish?</summary>
+            <p>Depends on season and regulations. The captain will follow current limits.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="section section--alt" id="photos" aria-label="Photo gallery">
+      <div class="container">
+        <h2>Photos</h2>
+        <p class="micro">A mix of inshore/offshore shots. Replace the placeholder images in <code>/assets</code>.</p>
+
+        <div class="gallery" id="gallery">
+          <!-- placeholders inserted by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="micro">© <span id="year"></span> Go A Fishin’ 2Day Charters. All rights reserved.</p>
+      <p class="micro"><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script src="site.config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
